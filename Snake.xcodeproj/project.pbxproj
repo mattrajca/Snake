@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* SnakeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* SnakeAppDelegate.m */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C9278CBB10BF0D1D00485178 /* NSColor+Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = C9278CBA10BF0D1D00485178 /* NSColor+Snake.m */; };
+		C95F1F2110C9B12D001FF128 /* HighScoresWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95F1F2010C9B12D001FF128 /* HighScoresWindow.xib */; };
+		C95F1F3410C9B1B5001FF128 /* HighScoresWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95F1F3310C9B1B5001FF128 /* HighScoresWindowController.m */; };
+		C9C23ABF10EBFBC20044C4F9 /* Types.c in Sources */ = {isa = PBXBuildFile; fileRef = C9C23ABE10EBFBC20044C4F9 /* Types.c */; };
+		C9EB1C9A10BEDCB70049D6E7 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB1C9910BEDCB70049D6E7 /* GameView.m */; };
+		C9EB1CB010BEDF880049D6E7 /* Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB1CAF10BEDF880049D6E7 /* Snake.m */; };
+		C9EB1D1410BEE25A0049D6E7 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB1D1310BEE25A0049D6E7 /* Food.m */; };
+		C9EB1D2510BEE3380049D6E7 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB1D2410BEE3380049D6E7 /* GameObject.m */; };
+		C9EB1D8310BEE6580049D6E7 /* SnakePart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB1D8210BEE6580049D6E7 /* SnakePart.m */; };
+		C9EB1E2910BEEC490049D6E7 /* TurningPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB1E2810BEEC490049D6E7 /* TurningPoint.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* SnakeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* SnakeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Snake_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snake_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Snake-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Snake-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9278CB910BF0D1D00485178 /* NSColor+Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+Snake.h"; sourceTree = "<group>"; };
+		C9278CBA10BF0D1D00485178 /* NSColor+Snake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Snake.m"; sourceTree = "<group>"; };
+		C9311FAB10BF3FA100B2F4FD /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		C95F1F1E10C9B12A001FF128 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/HighScoresWindow.xib; sourceTree = "<group>"; };
+		C95F1F3210C9B1B5001FF128 /* HighScoresWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoresWindowController.h; sourceTree = "<group>"; };
+		C95F1F3310C9B1B5001FF128 /* HighScoresWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoresWindowController.m; sourceTree = "<group>"; };
+		C9C23ABE10EBFBC20044C4F9 /* Types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Types.c; sourceTree = "<group>"; };
+		C9EB1C9810BEDCB70049D6E7 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		C9EB1C9910BEDCB70049D6E7 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		C9EB1CAE10BEDF880049D6E7 /* Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snake.h; sourceTree = "<group>"; };
+		C9EB1CAF10BEDF880049D6E7 /* Snake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
+		C9EB1D1210BEE25A0049D6E7 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		C9EB1D1310BEE25A0049D6E7 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		C9EB1D2310BEE3380049D6E7 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		C9EB1D2410BEE3380049D6E7 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		C9EB1D8110BEE6580049D6E7 /* SnakePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakePart.h; sourceTree = "<group>"; };
+		C9EB1D8210BEE6580049D6E7 /* SnakePart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakePart.m; sourceTree = "<group>"; };
+		C9EB1E2710BEEC490049D6E7 /* TurningPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurningPoint.h; sourceTree = "<group>"; };
+		C9EB1E2810BEEC490049D6E7 /* TurningPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurningPoint.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9278CB810BF0D1200485178 /* Additions */,
+				C9EB1D3410BEE3AD0049D6E7 /* Core */,
+				C9EB1D3310BEE3A50049D6E7 /* Game Objects */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Snake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Snake;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				256AC3F00F4B6AF500CF3369 /* Snake_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C95F1F2010C9B12D001FF128 /* HighScoresWindow.xib */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				8D1107310486CEB800E47090 /* Snake-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9278CB810BF0D1200485178 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				C9278CB910BF0D1D00485178 /* NSColor+Snake.h */,
+				C9278CBA10BF0D1D00485178 /* NSColor+Snake.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		C9EB1D3310BEE3A50049D6E7 /* Game Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB1D1210BEE25A0049D6E7 /* Food.h */,
+				C9EB1D1310BEE25A0049D6E7 /* Food.m */,
+				C9EB1D2310BEE3380049D6E7 /* GameObject.h */,
+				C9EB1D2410BEE3380049D6E7 /* GameObject.m */,
+				C9EB1CAE10BEDF880049D6E7 /* Snake.h */,
+				C9EB1CAF10BEDF880049D6E7 /* Snake.m */,
+				C9EB1D8110BEE6580049D6E7 /* SnakePart.h */,
+				C9EB1D8210BEE6580049D6E7 /* SnakePart.m */,
+				C9EB1E2710BEEC490049D6E7 /* TurningPoint.h */,
+				C9EB1E2810BEEC490049D6E7 /* TurningPoint.m */,
+				C9311FAB10BF3FA100B2F4FD /* Types.h */,
+				C9C23ABE10EBFBC20044C4F9 /* Types.c */,
+			);
+			name = "Game Objects";
+			sourceTree = "<group>";
+		};
+		C9EB1D3410BEE3AD0049D6E7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB1C9810BEDCB70049D6E7 /* GameView.h */,
+				C9EB1C9910BEDCB70049D6E7 /* GameView.m */,
+				C95F1F3210C9B1B5001FF128 /* HighScoresWindowController.h */,
+				C95F1F3310C9B1B5001FF128 /* HighScoresWindowController.m */,
+				256AC3D80F4B6AC300CF3369 /* SnakeAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* SnakeAppDelegate.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Snake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Snake" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snake;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Snake;
+			productReference = 8D1107320486CEB800E47090 /* Snake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Snake" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Snake */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Snake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				C95F1F2110C9B12D001FF128 /* HighScoresWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* SnakeAppDelegate.m in Sources */,
+				C9EB1C9A10BEDCB70049D6E7 /* GameView.m in Sources */,
+				C9EB1CB010BEDF880049D6E7 /* Snake.m in Sources */,
+				C9EB1D1410BEE25A0049D6E7 /* Food.m in Sources */,
+				C9EB1D2510BEE3380049D6E7 /* GameObject.m in Sources */,
+				C9EB1D8310BEE6580049D6E7 /* SnakePart.m in Sources */,
+				C9EB1E2910BEEC490049D6E7 /* TurningPoint.m in Sources */,
+				C9278CBB10BF0D1D00485178 /* NSColor+Snake.m in Sources */,
+				C95F1F3410C9B1B5001FF128 /* HighScoresWindowController.m in Sources */,
+				C9C23ABF10EBFBC20044C4F9 /* Types.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C95F1F2010C9B12D001FF128 /* HighScoresWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95F1F1E10C9B12A001FF128 /* English */,
+			);
+			name = HighScoresWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Snake_Prefix.pch;
+				INFOPLIST_FILE = "Snake-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Snake;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Snake_Prefix.pch;
+				INFOPLIST_FILE = "Snake-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Snake;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

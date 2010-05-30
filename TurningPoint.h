@@ -9,15 +9,15 @@
 
 @interface TurningPoint : NSObject {
   @private
-	uint8_t _x;
-	uint8_t _y;
-	Direction _direction;
+	uint8_t x;
+	uint8_t y;
+	Direction direction;
 }
 
 @property (nonatomic, readonly) uint8_t x;
 @property (nonatomic, readonly) uint8_t y;
 @property (nonatomic, readonly) Direction direction;
 
-- (id)initWithX:(uint8_t)x y:(uint8_t)y direction:(Direction)direction;
+- (id)initWithX:(uint8_t)aX y:(uint8_t)aY direction:(Direction)aDirection;
 
 @end

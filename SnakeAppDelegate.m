@@ -19,43 +19,31 @@
 
 @implementation SnakeAppDelegate
 
-@synthesize window = _window;
-@synthesize gameView = _gameView;
-@synthesize pointsField = _pointsField;
-@synthesize statusField = _statusField;
-
-#pragma mark -
-#pragma mark UI
+@synthesize window, gameView, pointsField, statusField;
 
 - (void)awakeFromNib {
 	[self newGame:nil];
 }
 
-#pragma mark -
-#pragma mark Game View Delegate
-
 - (void)gameView:(GameView *)view didUpdatePoints:(int)points {
-	[_pointsField setIntValue:points];
+	[pointsField setIntValue:points];
 }
 
 - (void)gameView:(GameView *)view didEndWithPoints:(int)points {
 	[self recordPoints:points];
 	
-	NSBeginAlertSheet(@"Whoa!", @"New Game", @"Quit", @"High Scores", _window, 
-					  self, @selector(sheetDidEnd:returnCode:contextInfo:), NULL, NULL, 
+	NSBeginAlertSheet(@"Whoa!", @"New Game", @"Quit", @"High Scores", window,
+					  self, @selector(sheetDidEnd:returnCode:contextInfo:), NULL, NULL,
 					  @"You collided with another game object!");
 }
 
 - (void)gameView:(GameView *)view didChangeState:(GameViewState)state {
-	[_statusField setStringValue:state == GameViewStatePaused ? @"Paused" : @"In Progress"];
+	[statusField setStringValue:state == GameViewStatePaused ? @"Paused" : @"In Progress"];
 }
 
-#pragma mark -
-#pragma mark Actions
-
 - (IBAction)newGame:(id)sender {
-	_counter = 4;
-	_gameView.ready = NO;
+	counter = 4;
+	gameView.ready = NO;
 	
 	[self launchCounterTick:nil];
 	
@@ -66,42 +54,36 @@
 }
 
 - (IBAction)showHighScores:(id)sender {
-	if (!_highScoresWC) {
-		_highScoresWC = [[HighScoresWindowController alloc] init];
+	if (!highScoresWC) {
+		highScoresWC = [[HighScoresWindowController alloc] init];
 	}
 	
-	[_highScoresWC showWindow:self];
+	[highScoresWC showWindow:self];
 }
-
-#pragma mark -
-#pragma mark App Delegate
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
 	return YES;
 }
 
-#pragma mark -
-#pragma mark Helpers
-
 - (void)launchCounterTick:(NSTimer *)tmr {
-	[_statusField setStringValue:[NSString stringWithFormat:@"Starting in %i...", _counter]];
+	[statusField setStringValue:[NSString stringWithFormat:@"Starting in %i...", counter]];
 	
-	if (_counter > 0) {
-		[_statusField setStringValue:[NSString stringWithFormat:@"Starting in %i...", _counter]];
+	if (counter > 0) {
+		[statusField setStringValue:[NSString stringWithFormat:@"Starting in %i...", counter]];
 		
-		_counter--;
+		counter--;
 		
 		return;
 	}
 	
 	[tmr invalidate];
 	
-	_gameView.ready = YES;
+	gameView.ready = YES;
 }
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
 	if ([menuItem action] == @selector(newGame:)) {
-		return _counter == 0;
+		return counter == 0;
 	}
 	
 	return YES;
@@ -136,15 +118,13 @@
 		[self newGame:self];
 	}
 	else if (returnCode == NSAlertOtherReturn) {
-		[_gameView newGame];
+		[gameView newGame];
 		
 		[self showHighScores:self];
 	}
 	else if (returnCode == NSAlertAlternateReturn) {
-		[_window close];
+		[window close];
 	}
 }
-
-#pragma mark -
 
 @end

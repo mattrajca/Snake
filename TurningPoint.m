@@ -9,16 +9,14 @@
 
 @implementation TurningPoint
 
-@synthesize x = _x;
-@synthesize y = _y;
-@synthesize direction = _direction;
+@synthesize x, y, direction;
 
-- (id)initWithX:(uint8_t)x y:(uint8_t)y direction:(Direction)direction {
+- (id)initWithX:(uint8_t)aX y:(uint8_t)aY direction:(Direction)aDirection {
 	self = [super init];
 	if (self) {
-		_x = x;
-		_y = y;
-		_direction = direction;
+		x = aX;
+		y = aY;
+		direction = aDirection;
 	}
 	return self;
 }

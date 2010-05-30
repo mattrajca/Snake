@@ -10,13 +10,13 @@
 
 @interface SnakePart : GameObject {
   @private
-	Direction _direction;
-	BOOL _isHead;
+	Direction direction;
+	BOOL isHead;
 }
 
 @property (nonatomic, assign) Direction direction;
 @property (nonatomic, assign) BOOL isHead;
 
-- (id)initWithX:(uint8_t)x y:(uint8_t)y direction:(Direction)direction;
+- (id)initWithX:(uint8_t)x y:(uint8_t)y direction:(Direction)aDirection;
 
 @end

@@ -17,16 +17,16 @@ typedef enum {
 
 @interface GameView : NSView {
   @private
-	Snake *_snake;
-	Food *_food;
-	Direction _nextDirection;
-	NSTimer *_gameTimer;
-	NSDate *_lastFoodDate;
-	BOOL _isPaused;
-	BOOL _isReady;
-	int _points;
+	Snake *snake;
+	Food *food;
+	Direction nextDirection;
+	NSTimer *gameTimer;
+	NSDate *lastFoodDate;
+	BOOL isPaused;
+	BOOL isReady;
+	int points;
 	
-	id < GameViewDelegate > _delegate;
+	id < GameViewDelegate > delegate;
 }
 
 @property (nonatomic, assign) BOOL ready;

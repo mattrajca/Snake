@@ -9,24 +9,23 @@
 
 @implementation SnakePart
 
-@synthesize direction = _direction;
-@synthesize isHead = _isHead;
+@synthesize direction, isHead;
 
-- (id)initWithX:(uint8_t)x y:(uint8_t)y direction:(Direction)direction {
+- (id)initWithX:(uint8_t)x y:(uint8_t)y direction:(Direction)aDirection {
 	self = [super initWithX:x y:y];
 	if (self) {
-		_direction = direction;
+		direction = aDirection;
 	}
 	return self;
 }
 
 - (void)draw {
 	NSRect bounds = [self toRect];
-
+	
 	[[NSColor blackColor] set];
 	NSRectFill(bounds);
 	
-	if (_isHead) {
+	if (isHead) {
 		NSRect faceRect = NSInsetRect(bounds, 4.0f, 4.0f);
 		
 		[[NSColor orangeColor] set];

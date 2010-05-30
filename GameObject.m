@@ -9,14 +9,13 @@
 
 @implementation GameObject
 
-@synthesize x = _x;
-@synthesize y = _y;
+@synthesize x, y;
 
-- (id)initWithX:(uint8_t)x y:(uint8_t)y {
+- (id)initWithX:(uint8_t)aX y:(uint8_t)aY {
 	self = [super init];
 	if (self) {
-		_x = x;
-		_y = y;
+		x = aX;
+		y = aY;
 	}
 	return self;
 }
@@ -30,7 +29,7 @@
 }
 
 - (NSRect)toRect {
-	return NSMakeRect(_x * kGameObjectWidth, _y * kGameObjectWidth, kGameObjectWidth, kGameObjectWidth);
+	return NSMakeRect(x * kGameObjectWidth, y * kGameObjectWidth, kGameObjectWidth, kGameObjectWidth);
 }
 
 @end

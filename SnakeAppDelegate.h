@@ -11,13 +11,13 @@
 
 @interface SnakeAppDelegate : NSObject < NSApplicationDelegate, GameViewDelegate > {
   @private
-    NSWindow *_window;
-	GameView *_gameView;
-	NSTextField *_pointsField;
-	NSTextField *_statusField;
+	NSWindow *window;
+	GameView *gameView;
+	NSTextField *pointsField;
+	NSTextField *statusField;
 	
-	HighScoresWindowController *_highScoresWC;
-	int _counter;
+	HighScoresWindowController *highScoresWC;
+	int counter;
 }
 
 @property (nonatomic, assign) IBOutlet NSWindow *window;

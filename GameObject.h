@@ -9,14 +9,14 @@
 
 @interface GameObject : NSObject {
   @private
-	uint8_t _x;
-	uint8_t _y;
+	uint8_t x;
+	uint8_t y;
 }
 
 @property (nonatomic, assign) uint8_t x;
 @property (nonatomic, assign) uint8_t y;
 
-- (id)initWithX:(uint8_t)x y:(uint8_t)y;
+- (id)initWithX:(uint8_t)aX y:(uint8_t)aY;
 
 - (void)draw;
 
